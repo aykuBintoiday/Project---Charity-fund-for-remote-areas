@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: 50px;
+  background-color: rgba(148, 0, 0, 0.8);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap; // ❗ không xuống dòng
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 0; // ❗ cho phép co nhỏ bên trong container
+}
+
+.chu_menu {
+  flex: 1 1 auto; // ❗ cho phép co nhỏ nếu thiếu không gian
+  min-width: 0;
+  text-align: center;
+
+  a {
+    display: block;
+    font-size: clamp(10px, 1.5vw, 18px); // ❗ tự co chữ lại
+    color: #ffe4b5;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #ffd426;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: #ffd426;
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* ============ Mobile: Hiển thị icon 3 gạch và menu xổ xuống ============ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1100;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffd426;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 15px; // ✅ canh lề phải
+    left: auto;  // ❗ loại bỏ left nếu có
+    background-color:  #940000;
+    border-radius: 50%;
+    transform: none; // ❗ bỏ translateX nếu có
+    justify-content: flex-end; // hoặc center nếu muốn icon nằm giữa
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; // điều chỉnh nếu cần
+    right: 0;  // ✅ nằm ngay dưới hamburger bên phải
+    background-color: rgba(148, 0, 0, 0.95);
+    padding: 15px 20px;
+    border-radius: 10px;
+    z-index: 999;
+    gap: 15px;
+    width: max-content;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .chu_menu a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
