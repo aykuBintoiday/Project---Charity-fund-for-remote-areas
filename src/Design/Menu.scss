@@ -2,46 +2,46 @@
 
 .navbar {
   position: fixed;
-  top: 20px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   width: 50vw;
   height: 50px;
-  background-color: rgba(148, 0, 0, 0.8);
+  background-color: #0b4428;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
-  z-index: 1000;
+  z-index: 1000; /* navbar nổi trên top-fade */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  
 }
 
+/* ====== menu & các phần còn lại của bạn giữ nguyên ====== */
 .menu {
   list-style: none;
   display: flex;
-  flex-wrap: nowrap; // ❗ không xuống dòng
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-width: 0; // ❗ cho phép co nhỏ bên trong container
+  width: 96%;
+  min-width: 0;
 }
 
 .chu_menu {
-  flex: 1 1 auto; // ❗ cho phép co nhỏ nếu thiếu không gian
+  flex: 1 1 auto;
   min-width: 0;
   text-align: center;
 
   a {
     display: block;
-    font-size: clamp(10px, 1.5vw, 18px); // ❗ tự co chữ lại
+    font-size: clamp(10px, 1.5vw, 18px);
     color: #ffe4b5;
     font-weight: bold;
     padding: 8px 10px;
@@ -74,7 +74,7 @@
   }
 }
 
-/* ============ Mobile: Hiển thị icon 3 gạch và menu xổ xuống ============ */
+/* Mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -103,12 +103,12 @@
     width: 50px;
     height: 50px;
     top: 15px;
-    right: 15px; // ✅ canh lề phải
-    left: auto;  // ❗ loại bỏ left nếu có
-    background-color:  #940000;
+    right: 15px;
+    left: auto;
+    background-color: #0b4428;
     border-radius: 50%;
-    transform: none; // ❗ bỏ translateX nếu có
-    justify-content: flex-end; // hoặc center nếu muốn icon nằm giữa
+    transform: none;
+    justify-content: flex-end;
     padding: 0;
   }
 
@@ -117,9 +117,9 @@
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 60px; // điều chỉnh nếu cần
-    right: 0;  // ✅ nằm ngay dưới hamburger bên phải
-    background-color: rgba(148, 0, 0, 0.95);
+    top: 60px;
+    right: 0;
+    background-color: #0b4428;
     padding: 15px 20px;
     border-radius: 10px;
     z-index: 999;
