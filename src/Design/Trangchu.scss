@@ -17,7 +17,7 @@ html, body {
 
 :root {
   --wave-light: #86a84e;  
-  --wave-dark:  #083f2f;  
+  --wave-dark:  #0b4428;  
 }
 
 .TrangTri_1 {
@@ -56,9 +56,9 @@ html, body {
 
 .TrangTri_3 {
   position: absolute;
-  left: 0;
+  left: -4%;
   bottom: 0;
-  width: 100%;
+  width: 120%;
   height: 150vh;
   display: block;
   pointer-events: none;
@@ -132,21 +132,20 @@ html, body {
 
 .Trang1_chuchung.Trang1_chu1 {
   color: #0b4428;             
-  top: 10%;                    
+  top: 24%;                    
   left: 10%;
 }
 
-/* Dòng 2: TRẺ EM */
 .Trang1_chu2 {
   color: #608422;              
-  top: 20%;
-  left: 10%;
+  top: 30.5%;
+  left: 10.2%;
 }
 
 .Trang1_chuchung.Trang1_chu3 {
   color: #0b4428;              
-  top: 30%;
-  left: 10%;
+  top: 37%;
+  left: 10.2%;
 }
 
 // Trang 2
@@ -155,7 +154,7 @@ html, body {
   height: 78.85vh;             
   min-height: 830px;            
   box-sizing: border-box;
-  background-color: rgb(0, 255, 102);
+  background-color: #0b4428;
 }
 
 // Trang 3

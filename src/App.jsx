@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Menu from "./Product/A_Menu";
-import Trangchu from "./Product/B_Trangchu";
-import Gioithieu from "./Product/C_Gioithieu";
-import Chiendich from "./Product/D_Chiendich";
-import Quy from "./Product/E_Quy";
-import DangNhap from "./Product/F_DangNhap";
+import Menu from "./Components/A_Menu";
+import Trangchu from "./Components/B_Trangchu";
+import Gioithieu from "./Components/C_Gioithieu";
+import Chiendich from "./Components/D_Chiendich";
+import Quy from "./Components/E_Quy";
+import DangNhap from "./Components/F_DangNhap";
 
 function App() {
   return (
