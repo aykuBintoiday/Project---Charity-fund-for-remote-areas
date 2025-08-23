@@ -132,20 +132,90 @@ html, body {
 
 .Trang1_chuchung.Trang1_chu1 {
   color: #0b4428;             
-  top: 24%;                    
+  top: 29%;                    
   left: 10%;
 }
 
 .Trang1_chu2 {
   color: #608422;              
-  top: 30.5%;
+  top: 35.5%;
   left: 10.2%;
 }
 
 .Trang1_chuchung.Trang1_chu3 {
   color: #0b4428;              
-  top: 37%;
+  top: 42%;
   left: 10.2%;
+}
+
+.Trang1_chu4 {
+  position: absolute;           
+  top: 55%;                   
+  left: 10%;                  
+  color: #44280e;            
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;             
+  font-size: 1.2vw;            
+  max-width: 50%;        
+  line-height: 1.6;       
+}
+
+.Trang1_button {
+  position: absolute;    
+  top: 49.5%;              
+  left: 10%;             
+  width: 38%;           
+  height: 6.5%;            
+  background-color: #004305;
+  color: #ffe4b5;
+  border: none;
+  border-radius: 9999px; 
+  font-size: 150%;      
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;         
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.Trang1_button:hover {
+  background-color: #006b0a; /* đổi màu khi hover */
+}
+
+@keyframes slideFadeInLeft {
+  0% {
+    transform: translateX(-12%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.Trang1_button,
+.Trang1_chuchungchung,
+.Trang1_chu4 {
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: slideFadeInLeft 800ms ease-out both;
+}
+
+.Trang1_button { animation-delay: 0.00s; }
+.Trang1_chu1   { animation-delay: 0.10s; } /* QUỸ HỖ TRỢ */
+.Trang1_chu2   { animation-delay: 0.20s; } /* TRẺ EM */
+.Trang1_chu3   { animation-delay: 0.30s; } /* VÙNG SÂU VÙNG XA */
+.Trang1_chu4   { animation-delay: 0.40s; } /* đoạn mô tả */
+
+@media (prefers-reduced-motion: reduce) {
+  .Trang1_button,
+  .Trang1_chuchungchung,
+  .Trang1_chu4 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 // Trang 2
