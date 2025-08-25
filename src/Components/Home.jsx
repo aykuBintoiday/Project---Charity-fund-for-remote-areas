@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import TrangTri1 from "../assets/img/TrangChu_TrangTri_1.png"
 import TrangTri2 from "../assets/img/TrangChu_TrangTri_2.png"
 import TrangTri4 from "../assets/img/TrangChu_TrangTri_4.png"
+import TrangTri5 from "../assets/img/TrangChu_TrangTri_5.png"
 import '../Design/Home.scss';
 
 function Trangchu() {
@@ -26,7 +27,10 @@ function Trangchu() {
             }
           });
         },
-        { threshold: 0.2 } // 20% vào khung nhìn thì chạy
+        { 
+          threshold: 0.2,
+          rootMargin: "0px 0px -10% 0px",
+        } 
       );
 
       io.observe(section);
@@ -92,6 +96,7 @@ function Trangchu() {
           <p className="Trang2_chu2_chule_dong10">đòi hỏi sự chung tay hỗ trợ từ Nhà nước và cộng đồng để nâng cao chất lượng cuộc sống.</p>
         </div>
       </div>
+      <img className="TrangTri_5" src={TrangTri5} alt="" />
     </div>
     
     {/* Trang 3 */}

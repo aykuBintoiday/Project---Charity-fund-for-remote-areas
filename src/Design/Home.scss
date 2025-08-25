@@ -222,8 +222,8 @@ html, body {
 .Trang_2 {
   position: relative;          
   width: 100%;                
-  height: 78.85vh;             
-  min-height: 830px;            
+  height: 100vh;             
+  min-height: 1000px;            
   box-sizing: border-box;
   background-color: #0b4428;
 }
@@ -240,7 +240,7 @@ html, body {
   position: absolute;        
   left: 50%;                  
   transform: translateX(-50%) translateX(-60px);
-  top: 10%;                   
+  top: 11%;                   
   white-space: nowrap;
   color: #ffd426;
 
@@ -302,22 +302,36 @@ html, body {
 .Trang2_chu2_chuchan p.animate { animation: slideRightToLeft 1s ease forwards; }
 
 /* --------- Vị trí & delay từng dòng --------- */
-.Trang2_chu2_chule_dong1  { top: 20%; animation-delay: .2s; }
-.Trang2_chu2_chule_dong2  { top: 24%; animation-delay: .5s; }
-.Trang2_chu2_chule_dong3  { top: 28%; animation-delay: .8s; }
-.Trang2_chu2_chule_dong4  { top: 32%; animation-delay: 1.1s; }
-.Trang2_chu2_chule_dong5  { top: 36%; animation-delay: 1.4s; }
-.Trang2_chu2_chule_dong6  { top: 40%; animation-delay: 1.7s; }
-.Trang2_chu2_chule_dong7  { top: 44%; animation-delay: 2.0s; }
-.Trang2_chu2_chule_dong8  { top: 48%; animation-delay: 2.3s; }
-.Trang2_chu2_chule_dong9  { top: 52%; animation-delay: 2.6s; }
-.Trang2_chu2_chule_dong10 { top: 56%; animation-delay: 2.9s; }
+.Trang2_chu2_chule_dong1  { top: 20%; animation-delay: 1s; }
+.Trang2_chu2_chule_dong2  { top: 24%; animation-delay: 2s; }
+.Trang2_chu2_chule_dong3  { top: 28%; animation-delay: 3s; }
+.Trang2_chu2_chule_dong4  { top: 32%; animation-delay: 4s; }
+.Trang2_chu2_chule_dong5  { top: 36%; animation-delay: 5s; }
+.Trang2_chu2_chule_dong6  { top: 40%; animation-delay: 6s; }
+.Trang2_chu2_chule_dong7  { top: 44%; animation-delay: 7s; }
+.Trang2_chu2_chule_dong8  { top: 48%; animation-delay: 8s; }
+.Trang2_chu2_chule_dong9  { top: 52%; animation-delay: 9s; }
+.Trang2_chu2_chule_dong10 { top: 56%; animation-delay: 10s; }
+
+.TrangTri_5 {
+  position: absolute;
+  top: 70%;     
+  left: 0;
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges; 
+  image-rendering: high-quality;             
+  -ms-interpolation-mode: nearest-neighbor;   
+}
 
 // Trang 3
 .Trang_3 {
   width: 100%;                
   height: 78.85vh;             
-  min-height: 830px;            
+  min-height: 1900px;            
   box-sizing: border-box;
   background-color: rgb(255, 132, 0);
 }
@@ -326,7 +340,7 @@ html, body {
 .Trang_4 {
   width: 100%;                
   height: 76.85vh;             
-  min-height: 830px;            
+  min-height: 1050px;            
   box-sizing: border-box;
   background-color: rgb(255, 0, 136);
 }
