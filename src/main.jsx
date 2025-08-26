@@ -8,12 +8,14 @@ import Gioithieu from "./Components/Introduce";
 import Chiendich from "./Components/Campaign";
 import Quy from "./Components/Budget";
 import DangNhap from "./Components/Login";
+import ErrorPage from "./Pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,   // App là layout có Menu chung
-    children: [
+    element: <App />,  
+    errorElement:  <ErrorPage/>,
+    children: [ 
       { index: true, element: <Trangchu /> },
       { path: "trangchu", element: <Trangchu /> },
       { path: "gioithieu", element: <Gioithieu /> },
