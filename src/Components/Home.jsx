@@ -4,6 +4,14 @@ import TrangTri1 from "../assets/img/TrangChu_TrangTri_1.png"
 import TrangTri2 from "../assets/img/TrangChu_TrangTri_2.png"
 import TrangTri4 from "../assets/img/TrangChu_TrangTri_4.png"
 import TrangTri5 from "../assets/img/TrangChu_TrangTri_5.png"
+import TrangTri6 from "../assets/img/TrangChu_TrangTri_6.png"
+import TrangTri7 from "../assets/img/TrangChu_TrangTri_7.png"
+import TrangChuAnh5 from "../assets/img/TrangChu_Anh5.jpg"
+import TrangChuAnh7 from "../assets/img/TrangChu_Anh7.webp"
+import TrangChuAnh9 from "../assets/img/TrangChu_Anh9.jpg"
+import TrangChuAnh11 from "../assets/img/TrangChu_Anh11.webp"
+import TrangChuAnh12 from "../assets/img/TrangChu_Anh12.jpg"
+import Home_Carousel_Img from "./Home_Carousel_Img";
 import '../Design/Home.scss';
 
 function Trangchu() {
@@ -96,7 +104,15 @@ function Trangchu() {
           <p className="Trang2_chu2_chule_dong10">đòi hỏi sự chung tay hỗ trợ từ Nhà nước và cộng đồng để nâng cao chất lượng cuộc sống.</p>
         </div>
       </div>
+      <img className="TrangTri_6" src={TrangTri6} alt="" />
+      <img className="TrangTri_7" src={TrangTri7} alt="" />
       <img className="TrangTri_5" src={TrangTri5} alt="" />
+      <Home_Carousel_Img
+        images={[TrangChuAnh5, TrangChuAnh7, TrangChuAnh9, TrangChuAnh11, TrangChuAnh12]}
+        intervalMs={3000}  // 5s
+        visible={3}        // hiển thị 3 ảnh
+        step={1}           // <— số ảnh trượt mỗi lần (chỉnh 1, 2,...)
+      />
     </div>
     
     {/* Trang 3 */}
