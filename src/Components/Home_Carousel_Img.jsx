@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import '../Design/Home.scss';
+import '../Styles/Home.scss';
 
 function useCarousel(items, visible = 3, intervalMs = 5000) {
   const [index, setIndex] = useState(0);

@@ -12,7 +12,7 @@ import TrangChuAnh9 from "../assets/img/TrangChu_Anh9.jpg"
 import TrangChuAnh11 from "../assets/img/TrangChu_Anh11.webp"
 import TrangChuAnh12 from "../assets/img/TrangChu_Anh12.jpg"
 import Home_Carousel_Img from "./Home_Carousel_Img";
-import '../Design/Home.scss';
+import '../Styles/Home.scss';
 
 function Trangchu() {
   const navigate = useNavigate();
@@ -109,9 +109,9 @@ function Trangchu() {
       <img className="TrangTri_5" src={TrangTri5} alt="" />
       <Home_Carousel_Img
         images={[TrangChuAnh5, TrangChuAnh7, TrangChuAnh9, TrangChuAnh11, TrangChuAnh12]}
-        intervalMs={3000}  // 5s
-        visible={3}        // hiển thị 3 ảnh
-        step={1}           // <— số ảnh trượt mỗi lần (chỉnh 1, 2,...)
+        intervalMs={2000}  
+        visible={3}        
+        step={1}          
       />
     </div>
     
